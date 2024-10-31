@@ -2,7 +2,7 @@
 
 This guide introduces the fundamentals of Terraform, including the HCL (HashiCorp Configuration Language), syntax, and best practices for organizing Terraform code. Terraform’s declarative language is designed for provisioning infrastructure across any cloud or platform, offering both human and machine readability.
 
-For a quick reference guide, I have put together this short [cheat sheet](./cheatsheet.md).
+For a quick reference guide, I have put together this short [cheat sheet](./docs/cheatsheet.md).
 
 ---
 
