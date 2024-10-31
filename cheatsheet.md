@@ -145,15 +145,3 @@ output "db_password" {
   sensitive = true
 }
 ```
-
-### **State Management**
-- **Remote State**:
-  ```hcl
-  terraform {
-    backend "s3" {
-      bucket = "mybucket"
-      key    = "path/to/my/key"
-      region = "us-west-2"
-    }
-  }
-  ```
