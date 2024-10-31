@@ -11,3 +11,10 @@ variable "vpc_cidr" {
   type        = string
   default     = "10.0.0.0/16"
 }
+
+# Define the number of EC2 instances to launch
+variable "instance_count" {
+  description = "Number of EC2 instances to launch"
+  type        = number
+  default     = 1
+}

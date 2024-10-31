@@ -1,7 +1,7 @@
-# Output the public IP address of the created EC2 instance
-output "instance_public_ip" {
+# Output the private IP address of the created EC2 instance
+output "instance_private_ip" {
   description = "Public IP address of the example instance"
-  value       = aws_instance.example.public_ip
+  value       = [for instance in aws_instance.example : instance.private_ip]
 }
 
 # Output the ID of the VPC created by the module

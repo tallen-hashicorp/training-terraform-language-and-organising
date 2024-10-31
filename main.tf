@@ -55,6 +55,7 @@ data "aws_ami" "ubuntu" {
 # Create an EC2 instance using the AMI from the data source and instance type from locals
 resource "aws_instance" "example" {
   ami           = local.ami_id
+  count         = var.instance_count         # Control the number of instances to create
   instance_type = local.instance_type
   subnet_id     = module.vpc.public_subnets[0]  # Launch in one of the public subnets
 
